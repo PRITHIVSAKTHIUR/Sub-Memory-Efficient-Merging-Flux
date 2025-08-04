@@ -126,6 +126,30 @@ api.upload_folder(
 
 ---
 
+
+## Hardware accelerator
+
+```json
+{
+  "hardware_accelerator": "1 x H100 SXM",
+  "gpu_memory_vram": "80 GB VRAM",
+  "system_memory_ram_cpu": "125 GB RAM",
+  "vcpu": 16,
+  "storage": {
+    "total_disk": "container disk, volume disk",
+    "container_disk": "150 GB",
+    "volume_disk": "150 GB"
+  },
+  "framework": {
+    "pytorch": "pytorch:2.8.0-py3.11-cuda12.8.1-cudnn-devel-ubuntu22.04"
+  }
+}
+
+
+```
+
+---
+
 ## Inference Code🧨
 
 ```py
